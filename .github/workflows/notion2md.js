@@ -61,7 +61,7 @@ async function main() {
         ],
       }
     });
-    console.log(response, 'response====')
+    console.log(response, 'response====', databaseId, process.env.NOTION_TOKEN)
     if(!response.results.length){
       console.log('no data')
       return

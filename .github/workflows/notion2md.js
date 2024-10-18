@@ -61,7 +61,7 @@ async function main() {
         ],
       }
     });
-    
+    console.log(response, 'response====')
     if(!response.results.length){
       console.log('no data')
       return

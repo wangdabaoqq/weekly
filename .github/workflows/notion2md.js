@@ -12,15 +12,14 @@ const notion = new Client({ auth: process.env.NOTION_TOKEN });
 const databaseId = process.env.NOTION_DATABASE_ID;
 
 const CONFIG ={
-  days: 1,
+  days: 7,
   dir:'./src/pages/posts',
   filename:'本周见闻'
 }
 
 const curTime = moment(Date.now());
 const today = curTime.format('YYYY-MM-DD');
-//.subtract(CONFIG.days, 'days').
-const startDay = moment(curTime).format('YYYY-MM-DD')
+const startDay = moment(curTime).subtract(CONFIG.days, 'days').format('YYYY-MM-DD')
 function formatStr(str) {
   if (!!str && str.trim()) {
     str = str.replace(/[&<>'"]/g, '')
@@ -62,7 +61,6 @@ async function main() {
         ],
       }
     });
-    console.log(response, 'response====', databaseId, process.env.NOTION_TOKEN)
     if(!response.results.length){
       console.log('no data')
       return

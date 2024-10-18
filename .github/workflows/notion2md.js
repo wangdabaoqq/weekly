@@ -12,7 +12,7 @@ const notion = new Client({ auth: process.env.NOTION_TOKEN });
 const databaseId = process.env.NOTION_DATABASE_ID;
 
 const CONFIG ={
-  days: 7,
+  days: 1,
   dir:'./src/pages/posts',
   filename:'本周见闻'
 }

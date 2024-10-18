@@ -19,7 +19,8 @@ const CONFIG ={
 
 const curTime = moment(Date.now());
 const today = curTime.format('YYYY-MM-DD');
-const startDay = moment(curTime).subtract(CONFIG.days, 'days').format('YYYY-MM-DD')
+//.subtract(CONFIG.days, 'days').
+const startDay = moment(curTime).format('YYYY-MM-DD')
 function formatStr(str) {
   if (!!str && str.trim()) {
     str = str.replace(/[&<>'"]/g, '')

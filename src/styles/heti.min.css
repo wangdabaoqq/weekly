@@ -1,5 +1,5 @@
 :root {
-  --text-font: -apple-system,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial!important;
+  --text-font: 'LXGW WenKai Screen R', sans-serif!important;
   --code-text-font:  Monaco, 'SF Mono', Consolas,  Courier, monospace;
 }
 

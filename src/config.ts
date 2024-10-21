@@ -6,7 +6,7 @@ export const SITE = {
   "keywords": "weekly",
   "icon": "http://t-qiniu.linkroutes.com/uPic/logo_vZ4QQZ.png",
   "pic": "",
-  "homePage": "",
+  "homePage": "ttps://weekly.940703.xyz",
   "blogPage": "https://weekly.940703.xyz",
   "twitterId": "mianxie",
   "githubId": "wangdabaoqq",
